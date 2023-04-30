@@ -1,0 +1,39 @@
+begin
+        prog = irexec
+        button = KEY_POWER
+        config = sudo bash /etc/lirc/scripts/elegoo.sh "toggle" "Wohnzimmer_Lampe"
+end
+
+begin
+        prog = irexec
+	button = KEY_DOWN
+	config = sudo bash /etc/lirc/scripts/elegoo.sh "dec_brightness" "Wohnzimmer_Lampe"
+end
+
+begin
+        prog = irexec
+	button = KEY_UP
+	config = sudo bash /etc/lirc/scripts/elegoo.sh "inc_brightness" "Wohnzimmer_Lampe"
+end
+
+begin
+        prog = irexec
+	button = KEY_0
+	config = sudo bash /etc/lirc/scripts/elegoo.sh "min_brightness" "Wohnzimmer_Lampe"
+end
+
+begin
+        prog = irexec
+	button = KEY_1
+	config = sudo bash /etc/lirc/scripts/elegoo.sh "max_brightness" "Wohnzimmer_Lampe"
+end
+        
+begin
+        prog = irexec
+        button = KEY_9
+        config = sudo bash /etc/lirc/scripts/elegoo.sh "toggle" "Desktop"
+end
+
+
+
+
