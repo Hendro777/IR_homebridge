@@ -2,7 +2,7 @@ fileName=`basename "$0"`
 echo running $fileName
 
 ### PARAMETER
-if [ $(hostname) == "homebridge" ]
+if [ $(hostname) == "raspi" ]
 then
     serverName="localhost"
     sudo sh -c 'echo 255 > /sys/class/leds/PWR/brightness' # LED ON
@@ -137,7 +137,7 @@ then
 fi
 
 ### LED OFF
-if [ $(hostname) == "homebridge" ]
+if [ $(hostname) == "raspi" ]
 then
     serverName="localhost"
     sudo sh -c 'echo 0 > /sys/class/leds/PWR/brightness'
