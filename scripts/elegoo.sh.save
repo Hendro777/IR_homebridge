@@ -6,7 +6,7 @@
     if [ $(hostname) = "raspi" ]
     then
         serverName="localhost"
-        sudo sh -c 'echo 255 > /sys/class/leds/PWR/brightness' # LED ON
+        sudo sh -c 'echo 255 > /sys/class/leds/led1/brightness' # LED ON
     else
         serverName="192.168.1.76"
     fi
@@ -140,7 +140,8 @@
     if [ $(hostname) = "raspi" ]
     then
         serverName="localhost"
-        sudo sh -c 'echo 0 > /sys/class/leds/PWR/brightness'
+        sudo sh -c 'echo 0 > /sys/class/leds/led1/brightness'
     fi
 
     echo finishing $fileName
+raspiUserraspiUserraspiUser
